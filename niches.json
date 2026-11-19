@@ -1,0 +1,11 @@
+{
+ "_how": "One line per niche. The home page marks a niche LIVE when data_url answers with JSON whose 'updated' date is at most 14 days old. To add a niche: publish an index JSON with an 'updated' field (YYYY-MM-DD; if on another subdomain, send Access-Control-Allow-Origin: *) and fill url + data_url here.",
+ "niches": [
+  {"name": "Chocolate", "url": "/chocolate/", "data_url": "/chocolate/index.json", "freq": "daily", "desc": "Median €/kg from online shops + Eurostat chocolate inflation"},
+  {"name": "Coffee", "url": "https://coffee.eupriceindex.com/", "data_url": "https://coffee.eupriceindex.com/index.json", "freq": "weekly", "desc": "Specialty coffee €/kg by country and origin + Eurostat coffee inflation"},
+  {"name": "Cheese", "url": "", "data_url": "", "freq": "", "desc": "In preparation"},
+  {"name": "Tea", "url": "", "data_url": "", "freq": "", "desc": "In preparation"},
+  {"name": "Cosmetics", "url": "", "data_url": "", "freq": "", "desc": "In preparation"},
+  {"name": "Pet food", "url": "", "data_url": "", "freq": "", "desc": "In preparation"}
+ ]
+}

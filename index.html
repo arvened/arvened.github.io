@@ -15,10 +15,22 @@ a.card:hover{border-color:var(--acc)}.card h3{margin:0 0 .3em;font-size:1.05rem}
 .badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:var(--acc);color:var(--bg)}
 .badge.off{background:var(--line);color:var(--mut)}
 footer{margin-top:3em;font-size:.85rem;color:var(--mut);border-top:1px solid var(--line);padding-top:1em}</style></head><body><main>
-<nav><b><a href="/">EU Price Index</a></b><a href="/chocolate/">Chocolate</a><a href="/partners/">Partners</a><a href="/editorial-policy/">Editorial policy</a></nav>
+<nav><b><a href="/">EU Price Index</a></b><a href="/chocolate/">Chocolate</a><a href="https://coffee.eupriceindex.com/">Coffee</a><a href="/partners/">Partners</a><a href="/editorial-policy/">Editorial policy</a></nav>
 <h1>EU Price Index</h1>
 <p>Independent, regularly updated price data for everyday treats across Poland, Germany, Czechia, Belgium and France. Every price shows the date it was checked.</p>
-<h2>Indexes</h2><div class="grid"><a class="card" href="/chocolate/"><span class="badge">Live · daily</span><h3>Chocolate</h3><span class="mut">Median €/kg from online shops + Eurostat chocolate inflation</span></a><div class="card soon"><span class="badge off">Coming soon</span><h3>Coffee</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Tea</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Cheese</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Cosmetics</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Pet food</h3><span class="mut">In preparation</span></div></div>
+<h2>Indexes</h2><div class="grid" id="niches"><a class="card" href="/chocolate/"><span class="badge">Live · daily</span><h3>Chocolate</h3><span class="mut">Median €/kg from online shops + Eurostat chocolate inflation</span></a><a class="card" href="https://coffee.eupriceindex.com/"><span class="badge">Live · weekly</span><h3>Coffee</h3><span class="mut">Specialty coffee €/kg by country and origin + Eurostat coffee inflation</span></a><div class="card soon"><span class="badge off">Coming soon</span><h3>Tea</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Cheese</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Cosmetics</h3><span class="mut">In preparation</span></div><div class="card soon"><span class="badge off">Coming soon</span><h3>Pet food</h3><span class="mut">In preparation</span></div></div>
 <h2>How it works</h2><p>We collect publicly listed prices from online stores in the EU on a regular schedule and calculate them the same way for every store. Sponsors never change our numbers — see the <a href="/editorial-policy/">editorial policy</a>.</p>
 <footer>EU Price Index · <a href="/partners/">Partner with us</a> · <a href="/editorial-policy/">Editorial policy</a> · <a href="mailto:partners@eupriceindex.com">partners@eupriceindex.com</a></footer>
-</main></body></html>
+</main><script>
+// Cards come from niches.json: a niche is LIVE when its data file says it was updated in the last 14 days.
+(async()=>{const g=document.getElementById('niches');try{
+ const cfg=await (await fetch('/niches.json',{cache:'no-store'})).json();
+ const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const cards=await Promise.all(cfg.niches.map(async n=>{let up=null;
+  if(n.data_url){try{const j=await (await fetch(n.data_url,{cache:'no-store'})).json();up=j.updated||null}catch(e){}}
+  const live=up&&(Date.now()-Date.parse(up))<15*864e5;
+  if(live&&n.url)return '<a class="card" href="'+esc(n.url)+'"><span class="badge">Live · '+esc(n.freq)+'</span><h3>'+esc(n.name)+'</h3><span class="mut">'+esc(n.desc)+'<br>Updated '+esc(up)+'</span></a>';
+  const lbl=n.data_url?'Paused':'Coming soon';
+  return '<div class="card soon"><span class="badge off">'+lbl+'</span><h3>'+esc(n.name)+'</h3><span class="mut">'+esc(n.data_url?'Update delayed':n.desc)+'</span></div>'}));
+ g.innerHTML=cards.join('')}catch(e){/* keep the static cards */}})();
+</script></body></html>
