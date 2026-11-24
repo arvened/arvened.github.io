@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Walidator pliku XML Ceneo — darmowe sprawdzenie feedu | EU Price Index</title>
+<meta name="description" content="Darmowy walidator pliku XML Ceneo. Sprawdź feed produktowy: id, url, cena, dostępność (avail), kategoria, zdjęcia i kody EAN. Plik nie opuszcza Twojej przeglądarki.">
+<link rel="canonical" href="https://eupriceindex.com/narzedzia/walidator-xml-ceneo/">
+<link rel="alternate" hreflang="pl" href="https://eupriceindex.com/narzedzia/walidator-xml-ceneo/">
+<link rel="alternate" hreflang="en" href="https://eupriceindex.com/tools/ceneo-xml-validator/">
+<style>:root{--fg:#1d1d1f;--mut:#6b6b70;--bg:#fff;--card:#f6f4f1;--line:#e3dfd9;--acc:#5a3a22;--bad:#b3261e;--good:#1e7a3c}
+@media(prefers-color-scheme:dark){:root{--fg:#eee;--mut:#a3a3a8;--bg:#161514;--card:#211f1d;--line:#34312e;--acc:#d9a77a;--bad:#ff8a80;--good:#7fd99a}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}h1{font-size:1.6rem;line-height:1.25;margin:.2em 0}
+h2{font-size:1.15rem;margin:2em 0 .5em}h3{font-size:1rem;margin:1.2em 0 .3em}.mut{color:var(--mut);font-size:.9rem}a{color:var(--acc)}
+nav{font-size:.9rem;margin-bottom:1.5em}nav a{margin-right:14px;text-decoration:none}nav b a{color:var(--fg)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:1em 0}
+textarea,input[type=url]{width:100%;font:13px/1.4 ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+textarea{height:160px}label{display:block;font-weight:600;margin:.8em 0 .3em}
+button{margin-top:1em;font:600 1rem system-ui;padding:10px 20px;border:0;border-radius:6px;background:var(--acc);color:var(--bg);cursor:pointer}
+.bad{color:var(--bad);font-weight:600}.good{color:var(--good);font-weight:600}pre{white-space:pre-wrap;font-size:.85rem}
+#out li{margin-bottom:.5em}
+footer{margin-top:3em;font-size:.85rem;color:var(--mut);border-top:1px solid var(--line);padding-top:1em}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Walidator pliku XML Ceneo","url":"https://eupriceindex.com/narzedzia/walidator-xml-ceneo/","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"PLN"},"inLanguage":"pl"}</script>
+</head><body><main>
+<nav><b><a href="/">EU Price Index</a></b><a href="/monitoring/">Monitoring cen</a><a href="/tools/ceneo-xml-validator/">English</a></nav>
+<h1>Walidator pliku XML Ceneo</h1>
+<p><b>Sprawdź za darmo, czy Twój feed produktowy spełnia wymagania Ceneo — zanim oferty zostaną odrzucone.</b> Plik jest sprawdzany w Twojej przeglądarce i nigdzie nie jest wysyłany.</p>
+
+<div class="box">
+<label for="file">1. Wybierz plik XML</label>
+<input type="file" id="file" accept=".xml,text/xml,application/xml">
+<label for="url">…albo podaj link do feedu</label>
+<input type="url" id="url" placeholder="https://twojsklep.pl/ceneo.xml" inputmode="url">
+<label for="xml">…albo wklej treść pliku</label>
+<textarea id="xml" spellcheck="false" placeholder='&lt;offers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1"&gt;…'></textarea>
+<button id="run" type="button">Sprawdź plik</button>
+</div>
+<div id="out" class="box" hidden aria-live="polite"></div>
+
+<h2>Nie masz pliku XML?</h2>
+<p>Hurtownia lub producent nie udostępnia feedu? Codziennie odczytujemy publiczną stronę dostawcy (ceny, dostępność, EAN) i przygotowujemy z niej plik XML w standardzie Ceneo — gotowy do podłączenia w Ceneo, BaseLinker, Apilo lub Shoper, z Twoją marżą. Pierwszy plik testowy w 24 godziny, za darmo.</p>
+<p><a href="mailto:partners@eupriceindex.com?subject=Plik%20XML%20od%20dostawcy">Napisz: partners@eupriceindex.com</a> — podaj stronę dostawcy.</p>
+
+<h2>Co sprawdza walidator</h2>
+<ul>
+<li><b>Struktura:</b> poprawność XML, znacznik &lt;offers&gt;, grupy &lt;group&gt;, oferty &lt;o&gt;.</li>
+<li><b>Wymagane pola:</b> unikalne <code>id</code>, pełny <code>url</code>, <code>price</code> z kropką i większa od zera, <code>&lt;name&gt;</code>, <code>&lt;cat&gt;</code>.</li>
+<li><b>Dostępność:</b> <code>avail</code> tylko 1, 3, 7, 14, 90, 99 lub 110; <code>stock</code> jako liczba całkowita; <code>set</code> i <code>basket</code> tylko 0 lub 1.</li>
+<li><b>Jakość oferty:</b> zdjęcie główne, opis, producent i kod EAN — z kontrolą cyfry kontrolnej EAN-8/EAN-13/GTIN-14.</li>
+<li><b>Duplikaty:</b> powtórzone id i adresy url.</li>
+</ul>
+<p class="mut">Link do feedu zadziała tylko wtedy, gdy serwer sklepu pozwala przeglądarce pobrać plik. Jeśli nie — pobierz plik i wybierz go z dysku.</p>
+
+<h2>Najczęstsze błędy w pliku Ceneo</h2>
+<ul>
+<li>Cena z przecinkiem (<code>19,99</code>) zamiast kropki (<code>19.99</code>).</li>
+<li>Powtórzone <code>id</code> po imporcie wariantów produktu.</li>
+<li>Względne adresy url i zdjęć (<code>/produkt/123</code>) zamiast pełnych (<code>https://…</code>).</li>
+<li>Błędne kody EAN — przepisane z literówką lub skrócone.</li>
+<li>Wartość <code>avail</code> spoza listy, np. <code>2</code> lub <code>tak</code>.</li>
+</ul>
+
+<p class="mut">Narzędzie niezależne, niepowiązane z Ceneo.pl. Sprawdzenie opiera się na publicznej instrukcji tworzenia pliku XML Ceneo; ostateczną decyzję o przyjęciu ofert podejmuje Ceneo.</p>
+<footer>EU Price Index · <a href="/monitoring/">Monitoring cen konkurencji</a> · <a href="mailto:partners@eupriceindex.com">partners@eupriceindex.com</a></footer>
+</main><script src="/assets/feed-validator.js"></script></body></html>
