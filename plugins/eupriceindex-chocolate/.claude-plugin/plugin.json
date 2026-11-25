@@ -1,0 +1,15 @@
+{
+  "name": "eupriceindex-chocolate",
+  "displayName": "EU Price Index: Chocolate",
+  "version": "1.0.0",
+  "description": "Is my chocolate price low, fair or high? Compares a chocolate price per kg with the free EU Price Index (daily median online prices in Poland, Germany and France, plus Eurostat chocolate inflation).",
+  "author": {
+    "name": "EU Price Index",
+    "email": "partners@eupriceindex.com",
+    "url": "https://eupriceindex.com"
+  },
+  "homepage": "https://eupriceindex.com/chocolate/",
+  "repository": "https://github.com/arvened/arvened.github.io",
+  "license": "MIT",
+  "keywords": ["chocolate", "pricing", "chocolatier", "retail", "europe", "price-index"]
+}
