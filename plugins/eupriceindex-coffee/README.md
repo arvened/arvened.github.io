@@ -2,7 +2,11 @@
 
 Ask Claude whether your coffee price is low, fair or high, and get an answer based on real market data instead of a guess.
 
-Example: *"I sell Ethiopian coffee at 28 EUR per kg in 1 kg bags. Is that high for Poland?"* or *"Our Colombian 250 g bag costs 16.90 EUR in Germany. Fair price?"*
+Example prompts:
+
+- *"I sell Ethiopian coffee at 28 EUR per kg in 1 kg bags. Is that high for Poland?"*
+- *"Our Colombian 250 g bag costs 16.90 EUR in Germany. Fair price?"*
+- *"We charge 89 PLN for 500 g of Brazil. Where is that versus the EU market?"*
 
 ## What it does
 
@@ -26,4 +30,6 @@ Data: EU Price Index, https://coffee.eupriceindex.com/ — free to reuse with at
 
 Plugin text and code: MIT licence (see LICENSE).
 
-Contact: partners@eupriceindex.com
+Privacy policy: https://eupriceindex.com/privacy/ — no personal data, no cookies.
+
+Contact: partners@eupriceindex.com (EU Price Index, run by Eduard Arbitman, Kyiv, Ukraine).

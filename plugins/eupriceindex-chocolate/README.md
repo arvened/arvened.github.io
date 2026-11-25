@@ -2,7 +2,11 @@
 
 Ask Claude whether your chocolate price is low, fair or high, and get an answer based on real market data instead of a guess.
 
-Example: *"I sell dark chocolate bars at 7.90 EUR per 100 g in Germany. Is that expensive?"* or *"Our 2.5 kg bag of milk chocolate callets costs 65 EUR in France. Fair price?"*
+Example prompts:
+
+- *"I sell dark chocolate bars at 7.90 EUR per 100 g in Germany. Is that expensive?"*
+- *"Our 2.5 kg bag of milk chocolate callets costs 65 EUR in France. Fair price?"*
+- *"A 70 g bar of white chocolate at 24 PLN in Poland — cheap or expensive?"*
 
 ## What it does
 
@@ -22,8 +26,10 @@ The index covers dark, milk and white chocolate (bars, and bulk packs of 1 kg or
 
 ## Data and licence
 
-Data: EU Price Index, https://eupriceindex.com/chocolate/ — free to reuse with attribution (CC BY 4.0). It is public price information, not financial advice.
+Data: EU Price Index, https://eupriceindex.com/chocolate/ — please cite the source when you quote it. It is public price information, not financial advice.
 
 Plugin text and code: MIT licence (see LICENSE).
 
-Contact: partners@eupriceindex.com
+Privacy policy: https://eupriceindex.com/privacy/ — no personal data, no cookies.
+
+Contact: partners@eupriceindex.com (EU Price Index, run by Eduard Arbitman, Kyiv, Ukraine).

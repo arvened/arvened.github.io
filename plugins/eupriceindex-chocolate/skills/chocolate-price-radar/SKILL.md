@@ -15,8 +15,8 @@ description: Check whether a chocolate price per kg is low, fair or high in Pola
    - PLN -> EUR: ask for the rate only if the user did not give EUR;
      say which rate you used.
 3. Pick the row in "groups": country (PL, DE, FR) + type (dark, milk,
-   white) + format ("bar" = retail bars and tablets, "bulk" = packs of
-   1 kg or more).
+   white) + format ("bar" = bars and tablets of 40-500 g, "bulk" = packs of
+   1 kg or more; gift sets, pralines and figures are not in the index).
    - If the format is unclear, ask one short question.
    - If there is no row for that country, compare with the same type and
      format in the other countries and say so clearly.
