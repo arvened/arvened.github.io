@@ -1,7 +1,7 @@
 {
   "name": "eupriceindex-coffee",
   "displayName": "EU Price Index: Coffee",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Is my coffee price low, fair or high? Compares a roasted single-origin coffee price per kg with the free EU Price Index (median and usual range by country, origin and pack size).",
   "author": {
     "name": "EU Price Index",

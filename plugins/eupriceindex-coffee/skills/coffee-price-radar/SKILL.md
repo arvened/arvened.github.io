@@ -33,8 +33,9 @@ description: Check whether a coffee price per kg is low, fair or high for a coun
 5. Reply in the user's language, 3-4 lines: verdict first, then
    median, p25-p75, number of shops, date. Retail prices incl. VAT.
    If "updated" is older than 14 days, warn that data may be stale.
-   If the row has "change_4w_pct" (or "trend" with 2+ points), add one line on
-   the direction: rising, falling or flat.
+   Direction: only if "change_4w_pct" is set, or "trend" has 3+ points.
+   Never call a direction from 2 points. If any step in "trend" is more than
+   15%, say the shop mix may have changed and do not call it a price move.
    If "official_context" is present and the user compares countries, you may add:
    the country's food price level (EU = 100) and the official 12-month coffee
    price change from Eurostat, named as such.
