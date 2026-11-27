@@ -34,6 +34,14 @@ jobs:
           }
           get https://coffee.eupriceindex.com/index.json plugins/eupriceindex-coffee/skills/coffee-price-radar/data/index.json
           get https://eupriceindex.com/chocolate/index.json plugins/eupriceindex-chocolate/skills/chocolate-price-radar/data/index.json
+      - name: Build the download files
+        run: |
+          set -e
+          cd plugins
+          for p in eupriceindex-coffee eupriceindex-chocolate; do
+            rm -f "$p.zip"
+            (cd "$p" && TZ=UTC find . -exec touch -d "2026-01-01 00:00" {} + && zip -qrX "../$p.zip" .)
+          done
       - name: Commit if changed
         run: |
           git add plugins
