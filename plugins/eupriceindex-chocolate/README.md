@@ -21,6 +21,7 @@ The index covers dark, milk and white chocolate (bars, and bulk packs of 1 kg or
 ## What it fetches and sends
 
 - It reads one public file: `https://eupriceindex.com/chocolate/index.json?src=skill`. The `src=skill` part only lets us count how many requests come from AI chats.
+- If the chat app cannot open websites, it uses a copy of the same public file bundled with the plugin (refreshed daily in this repository).
 - It sends nothing else anywhere. It does not ask for or store your name, email, shop name or prices.
 - No account, no API key, no cost.
 

@@ -1,0 +1,44 @@
+name: Plugin data (copy public index files into the Claude plugins)
+
+# The Claude plugins carry a copy of the public index files, because many chat
+# apps cannot open new websites. This job refreshes those copies from the live
+# public files. Public data only: medians per country/type, no shop names.
+on:
+  schedule:
+    - cron: "23 9 * * *"     # daily, after the chocolate run
+    - cron: "23 18 * * *"    # backup
+  push:
+    paths: [".github/workflows/plugin-data.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: plugin-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and check the public files
+        run: |
+          set -e
+          get() {  # url target
+            curl -fsSL --retry 3 -o /tmp/new.json "$1"
+            python3 -c "import json,sys; d=json.load(open('/tmp/new.json')); assert d.get('updated'), 'no updated'; print(sys.argv[1], d['updated'])" "$1"
+            cp /tmp/new.json "$2"
+          }
+          get https://coffee.eupriceindex.com/index.json plugins/eupriceindex-coffee/skills/coffee-price-radar/data/index.json
+          get https://eupriceindex.com/chocolate/index.json plugins/eupriceindex-chocolate/skills/chocolate-price-radar/data/index.json
+      - name: Commit if changed
+        run: |
+          git add plugins
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git config user.name "eupriceindex-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Plugins: refresh bundled index data"
+          git push

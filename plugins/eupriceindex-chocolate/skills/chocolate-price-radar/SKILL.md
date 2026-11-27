@@ -5,11 +5,18 @@ description: Check whether a chocolate price per kg is low, fair or high in Pola
 
 # Chocolate Price Radar (EU Price Index)
 
-1. Fetch https://eupriceindex.com/chocolate/index.json?src=skill
-   If it cannot be fetched, reply only: "I cannot load the EU Price Index
+1. Load the data, in this order:
+   a) Fetch https://eupriceindex.com/chocolate/index.json?src=skill
+   b) If that fails (many chat apps cannot open new websites), read the
+      copy bundled with this skill: data/index.json in this skill's folder.
+   c) If both are available, use the one with the newer "updated" date.
+   Always say which date the numbers are from.
+   If neither works, reply only: "I cannot load the EU Price Index
    data right now" and ask the user to paste the JSON from
    https://eupriceindex.com/chocolate/index.json. Stop there.
    Do NOT use prices from web search or from memory instead.
+   If you used the bundled copy and "updated" is older than 7 days,
+   say the plugin's data is old and suggest updating the plugin.
 2. Turn the user's price into EUR per kg:
    - pack price -> per kg (100 g bar x 10, 80 g x 12.5, 2.5 kg bag / 2.5);
    - PLN -> EUR: ask for the rate only if the user did not give EUR;

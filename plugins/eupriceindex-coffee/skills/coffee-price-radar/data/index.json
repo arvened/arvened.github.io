@@ -1,0 +1,1343 @@
+{
+ "schema": "eupriceindex.coffee.v1",
+ "title": "EU Price Index — Coffee (public retail prices)",
+ "updated": "2026-11-25",
+ "period": "snapshot 2026-11-25; trend = weekly snapshots",
+ "currency": "EUR",
+ "unit": "per kg",
+ "vat": "included",
+ "method": "Each shop counts once: its median EUR/kg for single-origin offers in stock. Rows show 25th percentile, median and 75th percentile across shops. Rows with fewer than 5 shops are not published. No shop names, no raw prices.",
+ "fx": {
+  "date": "2026-11-25",
+  "source": "ECB",
+  "EUR_per_PLN": 0.2232,
+  "EUR_per_CZK": 0.04093
+ },
+ "segments": {
+  "roasted": "roasted single-origin coffee, pack 250g (200-350 g) or 1kg (0.9-1.1 kg)",
+  "green": "green (unroasted) coffee, retail packs 0.2-5 kg, EU shops"
+ },
+ "rows": [
+  {
+   "country": "BE",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "1kg",
+   "shops": 5,
+   "offers": 111,
+   "p25": 37.5,
+   "median": 51.5,
+   "p75": 60.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 51.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 51.5
+    }
+   ]
+  },
+  {
+   "country": "BE",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "250g",
+   "shops": 5,
+   "offers": 106,
+   "p25": 54.0,
+   "median": 54.0,
+   "p75": 58.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 54.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 54.0
+    }
+   ]
+  },
+  {
+   "country": "BE",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "1kg",
+   "shops": 5,
+   "offers": 25,
+   "p25": 33.5,
+   "median": 38.0,
+   "p75": 39.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 38.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 38.0
+    }
+   ]
+  },
+  {
+   "country": "BE",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "250g",
+   "shops": 5,
+   "offers": 21,
+   "p25": 41.0,
+   "median": 44.0,
+   "p75": 46.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 44.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 44.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "1kg",
+   "shops": 13,
+   "offers": 221,
+   "p25": 35.5,
+   "median": 52.0,
+   "p75": 54.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 58.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 52.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "250g",
+   "shops": 14,
+   "offers": 278,
+   "p25": 40.0,
+   "median": 58.0,
+   "p75": 64.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 66.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 58.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "1kg",
+   "shops": 10,
+   "offers": 37,
+   "p25": 34.5,
+   "median": 40.0,
+   "p75": 44.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 41.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 40.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "250g",
+   "shops": 10,
+   "offers": 45,
+   "p25": 36.5,
+   "median": 45.0,
+   "p75": 52.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 51.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 45.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "colombia",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 20,
+   "p25": 34.5,
+   "median": 46.0,
+   "p75": 56.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 46.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "colombia",
+   "pack": "250g",
+   "shops": 7,
+   "offers": 33,
+   "p25": 35.5,
+   "median": 55.5,
+   "p75": 72.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 55.5
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "1kg",
+   "shops": 10,
+   "offers": 64,
+   "p25": 51.0,
+   "median": 53.0,
+   "p75": 60.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 53.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "250g",
+   "shops": 12,
+   "offers": 67,
+   "p25": 51.5,
+   "median": 62.0,
+   "p75": 69.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 67.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 62.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "guatemala",
+   "pack": "1kg",
+   "shops": 6,
+   "offers": 19,
+   "p25": 37.0,
+   "median": 46.0,
+   "p75": 56.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 46.0
+    }
+   ]
+  },
+  {
+   "country": "DE",
+   "segment": "roasted",
+   "origin": "guatemala",
+   "pack": "250g",
+   "shops": 6,
+   "offers": 21,
+   "p25": 38.5,
+   "median": 50.0,
+   "p75": 67.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 50.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "1kg",
+   "shops": 37,
+   "offers": 930,
+   "p25": 34.5,
+   "median": 51.0,
+   "p75": 55.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 51.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 51.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "250g",
+   "shops": 46,
+   "offers": 1353,
+   "p25": 47.0,
+   "median": 57.5,
+   "p75": 71.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 58.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 57.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "1kg",
+   "shops": 29,
+   "offers": 130,
+   "p25": 30.5,
+   "median": 38.0,
+   "p75": 44.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 36.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 38.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "250g",
+   "shops": 34,
+   "offers": 153,
+   "p25": 35.0,
+   "median": 43.0,
+   "p75": 53.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 43.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 43.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "colombia",
+   "pack": "1kg",
+   "shops": 23,
+   "offers": 112,
+   "p25": 33.0,
+   "median": 55.5,
+   "p75": 66.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 45.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 55.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "colombia",
+   "pack": "250g",
+   "shops": 29,
+   "offers": 246,
+   "p25": 49.5,
+   "median": 70.0,
+   "p75": 80.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 63.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 70.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "costa_rica",
+   "pack": "1kg",
+   "shops": 10,
+   "offers": 50,
+   "p25": 40.0,
+   "median": 57.0,
+   "p75": 73.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 60.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 57.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "costa_rica",
+   "pack": "250g",
+   "shops": 15,
+   "offers": 83,
+   "p25": 61.0,
+   "median": 69.0,
+   "p75": 81.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 68.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 69.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "el_salvador",
+   "pack": "1kg",
+   "shops": 8,
+   "offers": 29,
+   "p25": 42.5,
+   "median": 53.5,
+   "p75": 68.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 58.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 53.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "el_salvador",
+   "pack": "250g",
+   "shops": 10,
+   "offers": 33,
+   "p25": 57.0,
+   "median": 68.0,
+   "p75": 86.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 65.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 68.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "1kg",
+   "shops": 27,
+   "offers": 231,
+   "p25": 40.0,
+   "median": 51.5,
+   "p75": 59.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 55.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 51.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "250g",
+   "shops": 40,
+   "offers": 308,
+   "p25": 50.0,
+   "median": 59.5,
+   "p75": 74.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 63.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 59.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "guatemala",
+   "pack": "1kg",
+   "shops": 21,
+   "offers": 92,
+   "p25": 33.5,
+   "median": 37.5,
+   "p75": 58.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 41.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 37.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "guatemala",
+   "pack": "250g",
+   "shops": 23,
+   "offers": 111,
+   "p25": 40.5,
+   "median": 48.0,
+   "p75": 67.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 51.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 48.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "honduras",
+   "pack": "1kg",
+   "shops": 9,
+   "offers": 41,
+   "p25": 30.0,
+   "median": 44.0,
+   "p75": 49.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 38.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 44.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "honduras",
+   "pack": "250g",
+   "shops": 14,
+   "offers": 82,
+   "p25": 40.0,
+   "median": 58.5,
+   "p75": 65.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 59.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 58.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "india",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 14,
+   "p25": 31.5,
+   "median": 35.5,
+   "p75": 49.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 35.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "india",
+   "pack": "250g",
+   "shops": 8,
+   "offers": 21,
+   "p25": 35.0,
+   "median": 44.5,
+   "p75": 59.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 44.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "indonesia",
+   "pack": "250g",
+   "shops": 8,
+   "offers": 30,
+   "p25": 44.5,
+   "median": 56.0,
+   "p75": 64.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 56.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "kenya",
+   "pack": "1kg",
+   "shops": 14,
+   "offers": 63,
+   "p25": 48.5,
+   "median": 55.0,
+   "p75": 62.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 55.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 55.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "kenya",
+   "pack": "250g",
+   "shops": 18,
+   "offers": 69,
+   "p25": 54.5,
+   "median": 60.5,
+   "p75": 68.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 60.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 60.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "mexico",
+   "pack": "1kg",
+   "shops": 6,
+   "offers": 14,
+   "p25": 30.5,
+   "median": 43.5,
+   "p75": 54.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 37.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 43.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "mexico",
+   "pack": "250g",
+   "shops": 7,
+   "offers": 20,
+   "p25": 38.0,
+   "median": 56.0,
+   "p75": 69.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 44.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 56.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "nicaragua",
+   "pack": "1kg",
+   "shops": 8,
+   "offers": 43,
+   "p25": 42.5,
+   "median": 52.0,
+   "p75": 74.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 56.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 52.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "nicaragua",
+   "pack": "250g",
+   "shops": 9,
+   "offers": 44,
+   "p25": 47.0,
+   "median": 63.5,
+   "p75": 74.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 63.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 63.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "peru",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 20,
+   "p25": 33.5,
+   "median": 35.0,
+   "p75": 49.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 36.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 35.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "peru",
+   "pack": "250g",
+   "shops": 8,
+   "offers": 25,
+   "p25": 35.5,
+   "median": 45.0,
+   "p75": 71.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 59.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 45.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "rwanda",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 34,
+   "p25": 40.5,
+   "median": 47.0,
+   "p75": 57.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 47.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 47.0
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "rwanda",
+   "pack": "250g",
+   "shops": 8,
+   "offers": 40,
+   "p25": 50.0,
+   "median": 52.5,
+   "p75": 62.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 53.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 52.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "uganda",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 16,
+   "p25": 34.0,
+   "median": 44.5,
+   "p75": 48.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 51.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 44.5
+    }
+   ]
+  },
+  {
+   "country": "EU",
+   "segment": "roasted",
+   "origin": "uganda",
+   "pack": "250g",
+   "shops": 11,
+   "offers": 31,
+   "p25": 48.5,
+   "median": 50.0,
+   "p75": 55.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 52.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 50.0
+    }
+   ]
+  },
+  {
+   "country": "IT",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "250g",
+   "shops": 5,
+   "offers": 273,
+   "p25": 57.0,
+   "median": 80.0,
+   "p75": 94.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 80.0
+    }
+   ]
+  },
+  {
+   "country": "IT",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "250g",
+   "shops": 5,
+   "offers": 96,
+   "p25": 56.5,
+   "median": 80.0,
+   "p75": 98.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-25",
+     "median": 80.0
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "1kg",
+   "shops": 9,
+   "offers": 317,
+   "p25": 31.5,
+   "median": 32.5,
+   "p75": 37.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 37.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 32.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "all",
+   "pack": "250g",
+   "shops": 10,
+   "offers": 364,
+   "p25": 36.0,
+   "median": 45.0,
+   "p75": 54.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 53.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 45.0
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "1kg",
+   "shops": 9,
+   "offers": 48,
+   "p25": 27.5,
+   "median": 29.5,
+   "p75": 31.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 31.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 29.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "brazil",
+   "pack": "250g",
+   "shops": 9,
+   "offers": 49,
+   "p25": 31.0,
+   "median": 34.0,
+   "p75": 35.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 35.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 34.0
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "colombia",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 36,
+   "p25": 27.5,
+   "median": 32.5,
+   "p75": 39.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 34.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 32.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "colombia",
+   "pack": "250g",
+   "shops": 9,
+   "offers": 52,
+   "p25": 36.5,
+   "median": 49.5,
+   "p75": 61.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 44.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 49.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "costa_rica",
+   "pack": "250g",
+   "shops": 6,
+   "offers": 21,
+   "p25": 58.0,
+   "median": 65.0,
+   "p75": 77.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 70.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 65.0
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "1kg",
+   "shops": 7,
+   "offers": 63,
+   "p25": 36.0,
+   "median": 38.0,
+   "p75": 46.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 53.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 38.0
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "ethiopia",
+   "pack": "250g",
+   "shops": 10,
+   "offers": 73,
+   "p25": 46.5,
+   "median": 52.5,
+   "p75": 59.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 61.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 52.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "guatemala",
+   "pack": "1kg",
+   "shops": 8,
+   "offers": 29,
+   "p25": 32.0,
+   "median": 33.0,
+   "p75": 35.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 34.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 33.0
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "guatemala",
+   "pack": "250g",
+   "shops": 8,
+   "offers": 33,
+   "p25": 38.0,
+   "median": 40.5,
+   "p75": 42.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 41.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 40.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "honduras",
+   "pack": "250g",
+   "shops": 7,
+   "offers": 18,
+   "p25": 32.0,
+   "median": 36.5,
+   "p75": 55.5,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 45.5
+    },
+    {
+     "date": "2026-11-25",
+     "median": 36.5
+    }
+   ]
+  },
+  {
+   "country": "PL",
+   "segment": "roasted",
+   "origin": "kenya",
+   "pack": "250g",
+   "shops": 7,
+   "offers": 18,
+   "p25": 52.5,
+   "median": 55.5,
+   "p75": 58.0,
+   "change_4w_pct": null,
+   "trend": [
+    {
+     "date": "2026-11-11",
+     "median": 55.0
+    },
+    {
+     "date": "2026-11-25",
+     "median": 55.5
+    }
+   ]
+  }
+ ],
+ "survey_url": null,
+ "license": "CC BY 4.0 — cite EU Price Index",
+ "contact": "partners@eupriceindex.com",
+ "source_url": "https://coffee.eupriceindex.com",
+ "official_context": {
+  "price_level_food": {
+   "what": "price level of food and non-alcoholic beverages, EU27 = 100",
+   "source": "Eurostat prc_ppp_ind (A0101, PLI_EU27_2020)",
+   "year": "2024",
+   "by_country": {
+    "BE": 105.3,
+    "CZ": 89.0,
+    "DE": 102.7,
+    "ES": 95.2,
+    "EU27_2020": 100.0,
+    "FI": 109.8,
+    "FR": 110.1,
+    "IT": 101.7,
+    "NL": 98.9,
+    "PL": 86.8
+   }
+  },
+  "coffee_inflation_12m": {
+   "what": "consumer price change for coffee over 12 months, %",
+   "month": "2026-10",
+   "source": "Eurostat prc_hicp_minr (CP01220 Coffee and coffee substitutes (ND))",
+   "by_country": {
+    "BE": 1.2,
+    "CZ": -7.4,
+    "DE": -4.7,
+    "ES": -4.5,
+    "EU27_2020": -1.4,
+    "FI": -4.8,
+    "FR": 0.8,
+    "IT": -0.2,
+    "NL": -3.1,
+    "PL": 1.3
+   }
+  },
+  "note": "From Eurostat, for comparison only. price_level_food shows how expensive food is in each country (EU = 100): divide our median by it/100 to compare coffee prices across countries fairly. coffee_inflation_12m is the official consumer price change for coffee; if our 4-week changes move the opposite way for months, treat our numbers with care."
+ }
+}
